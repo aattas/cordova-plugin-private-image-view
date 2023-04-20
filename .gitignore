@@ -1,0 +1,30 @@
+# Cordova generated files
+cordova/
+platforms/
+plugins/
+
+# iOS build files
+build/
+*.xcodeproj/
+*.xcworkspace/
+
+# Xcode files
+*.pbxproj
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# IntelliJ IDEA files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Node.js files
+node_modules/
+
+# macOS files
+.DS_Store
