@@ -6,6 +6,7 @@
     </js-module>
     <platform name="ios">
     <config-file parent="/*" target="config.xml">
+        <preference name="UseSwiftLanguageVersion" value="5" />
         <feature name="PrivateImageViewPlugin">
             <param name="ios-package" value="UIPrivateImageViewPlugin" />
         </feature>
