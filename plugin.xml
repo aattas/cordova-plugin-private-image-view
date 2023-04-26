@@ -13,6 +13,4 @@
         <source-file src="src/ios/PrivateImageView.m" />
         <header-file src="src/ios/PrivateImageView.h" />
     </platform>
-
-</platform>
 </plugin>
