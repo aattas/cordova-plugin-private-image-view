@@ -7,9 +7,10 @@
     <platform name="ios">
     <config-file parent="/*" target="config.xml">
         <feature name="PrivateImageViewPlugin">
-            <param name="ios-package" value="PrivateImageViewPlugin" />
+            <param name="ios-package" value="UIPrivateImageViewPlugin" />
         </feature>
     </config-file>
+    <source-file src="src/ios/UIPrivateImage.swift" />
     <header-file src="src/ios/PrivateImageViewPlugin.h" />
     <source-file src="src/ios/PrivateImageViewPlugin.m" />
     <header-file src="src/ios/PrivateImageView.h" />

@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
 
-exports.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'PrivateImageViewPlugin', 'coolMethod', [arg0]);
+exports.updateImage = function (image, success, error) {
+    exec(success, error, 'UIPrivateImageView', 'updateImage', [image]);
 };
