@@ -11,10 +11,6 @@
         </feature>
     </config-file>
     <source-file src="src/ios/UIPrivateImage.swift" />
-    <header-file src="src/ios/PrivateImageViewPlugin.h" />
-    <source-file src="src/ios/PrivateImageViewPlugin.m" />
-    <header-file src="src/ios/PrivateImageView.h" />
-    <source-file src="src/ios/PrivateImageView.m" />
     <framework src="AVFoundation.framework" />
     <framework src="UIKit.framework" />
 </platform>
