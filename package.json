@@ -1,0 +1,19 @@
+{
+    "name": "cordova-plugin-privateimageview",
+    "version": "1.0.0",
+    "description": "Cordova plugin for displaying private images",
+    "cordova": {
+        "id": "cordova-plugin-privateimageview",
+        "platforms": [
+            "ios"
+        ]
+    },
+    "keywords": [
+        "cordova",
+        "private",
+        "image",
+        "view"
+    ],
+    "author": "Abdulaziz Attas",
+    "license": ""
+}
