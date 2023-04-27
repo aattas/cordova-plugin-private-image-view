@@ -1,18 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.example.PrivateImageViewPlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="your.plugin.id"
+        version="0.0.1">
     <name>PrivateImageViewPlugin</name>
-    <js-module name="PrivateImageViewPlugin" src="www/PrivateImageViewPlugin.js">
-        <clobbers target="cordova.plugins.PrivateImageViewPlugin" />
+    <description>Your plugin description here</description>
+    <license>MIT</license>
+    <keywords>cordova,plugin,private,image,view</keywords>
+
+    <js-module src="www/privateImageView.js" name="privateImageView">
+        <clobbers target="privateImageView" />
     </js-module>
+
     <platform name="ios">
-    <config-file parent="/*" target="config.xml">
-        <preference name="UseSwiftLanguageVersion" value="5" />
-        <feature name="PrivateImageViewPlugin">
-            <param name="ios-package" value="UIPrivateImageViewPlugin" />
-        </feature>
-    </config-file>
-    <source-file src="src/ios/UIPrivateImage.swift" />
-    <framework src="AVFoundation.framework" />
-    <framework src="UIKit.framework" />
-</platform>
+        <config-file target="config.xml" parent="/*">
+            <feature name="PrivateImageViewPlugin">
+                <param name="ios-package" value="PrivateImageViewPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PrivateImageView.swift" />
+        <source-file src="src/ios/PrivateImageViewPlugin.swift" />
+    </platform>
 </plugin>
