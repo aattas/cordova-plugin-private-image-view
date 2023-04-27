@@ -1,16 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.example.PrivateImageViewPlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="your.plugin.id"
+        version="0.0.1">
     <name>PrivateImageViewPlugin</name>
-    <js-module src="www/privateimageview.js" name="privateimageview">
-        <clobbers target="cordova.plugins.privateimageview" />
+    <description>Your plugin description here</description>
+    <license>MIT</license>
+    <keywords>cordova,plugin,private,image,view</keywords>
+
+    <js-module src="www/privateImageView.js" name="privateImageView">
+        <clobbers target="privateImageView" />
     </js-module>
+
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="PrivateImageView">
-                <param name="ios-package" value="PrivateImageView" />
+            <feature name="PrivateImageViewPlugin">
+                <param name="ios-package" value="PrivateImageViewPlugin" />
             </feature>
         </config-file>
-        <source-file src="src/ios/PrivateImageView.m" />
-        <header-file src="src/ios/PrivateImageView.h" />
+        <source-file src="src/ios/PrivateImageView.swift" />
+        <source-file src="src/ios/PrivateImageViewPlugin.swift" />
     </platform>
 </plugin>
